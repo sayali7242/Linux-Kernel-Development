@@ -1,0 +1,10 @@
+--- syscalls.h	2019-09-09 12:45:34.380193744 -0500
++++ syscalls.h.090920	2019-09-09 12:33:23.358165209 -0500
+@@ -941,7 +941,4 @@ asmlinkage long sys_pkey_free(int pkey);
+ asmlinkage long sys_statx(int dfd, const char __user *path, unsigned flags,
+ 			  unsigned mask, struct statx __user *buffer);
+ 
+-/* CSE422 090920 */
+-asmlinkage int new_func1();
+-asmlinkage int new_func2(int singleArg);
+ #endif
